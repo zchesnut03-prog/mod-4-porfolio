@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="landing-page">
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/logo.svg" alt="">
+            </figure>
+                <ul class="nav__link--list">
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">About</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Projects</a>
+                    </li>
+                    <li class="nav__link">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        ">Contact</a>
+                    </li>
+                    <li class="nav__link click">
+                        <a href="#" class="
+                        nav__link--anchor
+                        link__hover-effect
+                        link__hover-effect--black
+                        "><i class="fa-solid fa-circle-half-stroke"></i></a>
+                    </li>
+                </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hey,</h1>
+                <h1 class="title pink">I'm Zoey</h1>
+                <p class="header__para">I'm a <b class="pink">Frontend Software Engineer</b> with a passion for building web applications with great user experiences. 
+                <br>
+                Here's a bit more <b class="pink">about me.</b>
+                </p>
+                <div class="social__list">
+                    <a href="https://google.com" target_blank class="social__link click">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" target_blank class="social__link click">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="./assets/David Bragg Resume.pdf" target_blank class="social__link click">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="mail__btn click">
+            <i class="fa-solid fa-envelope"></i>
+        </button>
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <h3 class="modal__title modal__title--about">Here's a bit more about me</h3>
+                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h4>
+                <p class="modal__para">filler para
+                <br>
+                more filler para.
+                </p>
+                <div class="modal__languages">
+                    <figure class="modal__language">
+                        <i class="modal__language--img fa-brands fa-html5"></i>
+                    <span class="language__name">HTML</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <i class="modal__language--img fa-brands fa-css3"></i>
+                    <span class="language__name">CSS</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <i class="modal__language--img fa-brands fa-js-square"></i>
+                    <span class="language__name">JavaScript</span>
+                    </figure>
+                </div>
+            </div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">
+                    Lets get in contact!
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact">
+                    I am open to new opportunities.
+                </h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send</button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fa-solid fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay-success">
+                    Thank you for your message, looking forward to speaking to you soon!
+                </div>
+            </div>
+            <i class="fa-solid fa-x modal__exit click"></i>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="pink">Projects</span>
+                </h1>
+                    <ul class="project__list">
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                                <div class="project__wrapper--background"></div>
+                                    <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Car Sales Project
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Html, CSS, JavaScript, Vue, Vuex
+                                    </h4>
+                                    <p class="project__description--para">
+                                        filler para
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                                <div class="project__wrapper--background"></div>
+                                    <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Car Sales Project
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Html, CSS, JavaScript, Vue, Vuex
+                                    </h4>
+                                    <p class="project__description--para">
+                                        filler para
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project">
+                            <div class="project__wrapper">
+                                <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                                <div class="project__wrapper--background"></div>
+                                    <div class="project__description">
+                                    <h3 class="project__description--title">
+                                        Car Sales Project
+                                    </h3>
+                                    <h4 class="project__description--sub-title">
+                                        Html, CSS, JavaScript, Vue, Vuex
+                                    </h4>
+                                    <p class="project__description--para">
+                                        filler para
+                                    </p>
+                                    <div class="project__description--links">
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                        <a href="#" class="project__description--link">
+                                            <i class="fa-solid fa-link"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+            <figure>
+                <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+            </figure>
+            <div class="footer__social--list">
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Github
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                LinkedIn
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Contact
+                </a>
+                <a href="#" class="
+                footer__social--link
+                link__hover-effect
+                link__hover-effect--white
+                ">
+                Resume
+                </a>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
