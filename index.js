@@ -2,6 +2,19 @@
 // service_c950c79      service ID
 // 51nb-QBJRj0u6-yKB    user ID
 
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleContrast() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else{
+        document.body.classList.remove("dark-theme")
+    }
+}
+
 
 function contact(event) {
     event.preventDefault();
@@ -23,4 +36,14 @@ function contact(event) {
             "The email service is temporarily unavilable. Please contact me directly at zchesnut03@gmail.com"
         );
     })
+}
+
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open"
 }

@@ -39,14 +39,14 @@
                         link__hover-effect--black
                         ">Projects</a>
                     </li>
-                    <li class="nav__link">
+                    <li class="nav__link" onclick="toggleModal()">
                         <a href="#" class="
                         nav__link--anchor
                         link__hover-effect
                         link__hover-effect--black
                         ">Contact</a>
                     </li>
-                    <li class="nav__link click">
+                    <li class="nav__link click" onclick="toggleContrast()">
                         <a href="#" class="
                         nav__link--anchor
                         link__hover-effect
@@ -61,7 +61,7 @@
                 <h1 class="title pink">I'm Zoey</h1>
                 <p class="header__para">I'm a <b class="pink">Frontend Software Engineer</b> with a passion for building web applications with great user experiences. 
                 <br>
-                Here's a bit more <b class="pink">about me.</b>
+                Here's a bit more <b class="pink click" onclick="toggleModal()">about me.</b>
                 </p>
                 <div class="social__list">
                     <a href="https://google.com" target_blank class="social__link click">
@@ -76,7 +76,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -93,19 +93,24 @@
                 <div class="modal__languages">
                     <figure class="modal__language">
                         <i class="modal__language--img fa-brands fa-html5"></i>
-                    <span class="language__name">HTML</span>
+                    <span class="language__name language__name__html">HTML</span>
                     </figure>
                     <figure class="modal__language">
                         <i class="modal__language--img fa-brands fa-css3"></i>
-                    <span class="language__name">CSS</span>
+                    <span class="language__name language__name__css">CSS</span>
                     </figure>
                     <figure class="modal__language">
                         <i class="modal__language--img fa-brands fa-js-square"></i>
-                    <span class="language__name">JavaScript</span>
+                    <span class="language__name language__name__js">JavaScript</span>
+                    </figure>
+                    <figure class="modal__language">
+                        <i class="modal__language--img fa-brands fa-react"></i>
+                    <span class="language__name language__name__react">React</span>
                     </figure>
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fa-solid fa-x modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">
                     Lets get in contact!
                 </h3>
@@ -134,7 +139,6 @@
                     Thank you for your message, looking forward to speaking to you soon!
                 </div>
             </div>
-            <i class="fa-solid fa-x modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
